@@ -39,6 +39,11 @@ public class SquareTreasure extends Treasure {
 
 	@Override
 	public boolean isTreasureCell(int x, int y) {
-		return treasure[y][x] > 0;
+		if (x < 0 || y < 0 || x >= size || y >= size) {
+			// out of bound
+			return false;
+		} else {
+			return treasure[y][x] > 0;
+		}
 	}
 }

@@ -14,9 +14,9 @@ import edu.cuny.brooklyn.project.treasure.TreasureGenerator;
 public class GameController {
 	private final static Logger LOGGER = LoggerFactory.getLogger(GameController.class);
 	
-	GameFrame gameFrame;
-	Scorer scorer = new Scorer();
-	PuzzlerMaker puzzlerMaker = new PuzzlerMaker();
+	private GameFrame gameFrame;
+	private Scorer scorer;
+	private PuzzlerMaker puzzlerMaker;
 	
 	public GameController() {
 		gameFrame = new GameFrame();
